@@ -1,0 +1,80 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="wooks.hanjanhaeyo.Game2Activity">
+
+    <Button
+        android:id="@+id/btn_select1"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="선택1"
+        android:onClick="OnClick_Select1"/>
+
+    <Button
+        android:id="@+id/btn_select2"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/btn_select1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="선택2"
+        android:onClick="OnClick_Select2"/>
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_select2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="카운트다운 : -"/>
+
+    <TextView
+        android:id="@+id/tv_playerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="플레이어 목록 : "/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_playerList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="결과 : "/>
+
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="다시하기"
+        android:visibility="gone"
+        android:onClick="OnClick_Retry"/>
+
+    <Button
+        android:id="@+id/btn_returnToRoom"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="대기실로"
+        android:layout_alignBaseline="@+id/btn_retry"
+        android:layout_alignBottom="@+id/btn_retry"
+        android:layout_toEndOf="@+id/btn_retry"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:onClick="OnClick_ReturnToRoom"/>
+
+</RelativeLayout>

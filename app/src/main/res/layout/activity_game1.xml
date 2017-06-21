@@ -1,0 +1,169 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="wooks.hanjanhaeyo.Game1Activity">
+
+    <Button
+        android:id="@+id/btn_tooth1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="2"
+        android:layout_below="@+id/btn_tooth1"
+        android:layout_alignEnd="@+id/btn_tooth1"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="3"
+        android:layout_below="@+id/btn_tooth2"
+        android:layout_alignEnd="@+id/btn_tooth2"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="4"
+        android:layout_below="@+id/btn_tooth3"
+        android:layout_alignEnd="@+id/btn_tooth3"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="5"
+        android:layout_below="@+id/btn_tooth4"
+        android:layout_alignEnd="@+id/btn_tooth4"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="6"
+        android:layout_alignBaseline="@+id/btn_tooth1"
+        android:layout_alignBottom="@+id/btn_tooth1"
+        android:layout_toEndOf="@+id/btn_tooth1"
+        android:layout_marginStart="15dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth7"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="7"
+        android:layout_below="@+id/btn_tooth6"
+        android:layout_alignEnd="@+id/btn_tooth6"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth8"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="8"
+        android:layout_below="@+id/btn_tooth7"
+        android:layout_alignEnd="@+id/btn_tooth7"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth9"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="9"
+        android:layout_below="@+id/btn_tooth8"
+        android:layout_alignEnd="@+id/btn_tooth8"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <Button
+        android:id="@+id/btn_tooth10"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="10"
+        android:layout_below="@+id/btn_tooth9"
+        android:layout_alignEnd="@+id/btn_tooth9"
+        android:layout_marginTop="5dp"
+        android:onClick="OnClick_Tooth"/>
+
+    <TextView
+        android:id="@+id/tv_playerList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_tooth10"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:text="순서 : "/>
+
+    <TextView
+        android:id="@+id/tv_currentTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_playerList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="현재 턴 : "/>
+
+    <TextView
+        android:id="@+id/tv_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_currentTurn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="카운트다운 : "/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_countdown"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="결과 : "/>
+
+    <Button
+        android:id="@+id/btn_retry"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="다시하기"
+        android:visibility="gone"
+        android:onClick="OnClick_Retry"/>
+
+    <Button
+        android:id="@+id/btn_returnToRoom"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:text="대기실로"
+        android:layout_alignBaseline="@+id/btn_retry"
+        android:layout_alignBottom="@+id/btn_retry"
+        android:layout_toEndOf="@+id/btn_retry"
+        android:layout_marginStart="15dp"
+        android:visibility="gone"
+        android:onClick="OnClick_ReturnToRoom"/>
+
+</RelativeLayout>

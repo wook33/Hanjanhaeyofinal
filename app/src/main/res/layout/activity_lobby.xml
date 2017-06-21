@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context="wooks.hanjanhaeyo.LobbyActivity">
+
+
+    <ListView
+        android:id="@+id/lv_hostList"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:text="방 생성하기"
+        android:onClick="OnClick_CreateRoom"
+        android:layout_below="@id/lv_hostList"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33dp"/>
+
+</RelativeLayout>
